@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css'
-import Button from './components/Button';
-import Todos from './components/Todos';7
-import { TODOS } from './data/data';
+// import Button from './components/Button';
+// import Todos from './components/Todos';
+// import { TODOS } from './data/data';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!newTodo.trim()) return;
-    // console.log(e);
+    console.log(e);
     const newTodoItem = {
       id: Date.now(),
       title: newTodo,
